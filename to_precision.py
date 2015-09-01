@@ -8,6 +8,9 @@ def to_precision(x,p):
 
 
     import math
+    if math.isnan(x):
+        return 'nan';
+        
     x = float(x)
 
     if x == 0.:
